@@ -1,0 +1,3 @@
+[submodule "Middlewares/Third_Party/lwesp-fat-8266"]
+	path = Middlewares/Third_Party/lwesp-fat-8266
+	url = https://github.com/niedong/lwesp-fat-8266
