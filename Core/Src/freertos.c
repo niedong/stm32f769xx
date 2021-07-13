@@ -30,8 +30,6 @@
 #include "uart_printf.h"
 #include "uart_assert.h"
 #include "lwesp/lwesp.h"
-#include "lwesp/lwesp_netconn.h"
-#include "lwesp/lwesp_private.h"
 
 /* USER CODE END Includes */
 
@@ -153,7 +151,6 @@ void MX_FREERTOS_Init(void) {
 void KrnlTask(void *argument)
 {
   /* USER CODE BEGIN KrnlTask */
-
   assert(lwesp_init(0, 1) == lwespOK);
 
   osSemaphoreRelease(InitSemaphore);
